@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	.wrap{margin: auto; background: url(northpole_.png);width: 1300px; height: 15000px; background-size: cover; position: relative; perspective: 5000px; text-align: center; overflow: hidden;}
+	.car{position: sticky;}
+
+		@keyframes ro{
+			from{left:0px;}
+			to{transform: rotate3D(1,0,10,10deg);}}
+
+	.np{animation: roo 5s infinite alternate linear;}
+
+		@keyframes roo{
+			from{left:15px;}
+			to{transform: rotate3D(0.5,0,0.5,2deg); right: 20px;}}
+
+	.b{animation: rooo 2.5s infinite alternate linear; }
+
+		@keyframes rooo{
+			from{right:-10px;}
+			to{transform: rotate3D(0.5,0.5,0,3deg); left: 468px;}}
+
+
+	.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+	}
+	.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<section class="image">
+			<img src="car.png" style="position: fixed; top: 3400px; width: 600px; right: 350px;" class="car">
+			<img src="back.png" style="width: 1300px; margin-top: 12px; position: absolute; right: 0px;" >
+			<img src="northpole.png" style="position: absolute; left: 70px; top: 1900px; width: 280px; height: 780px;" class="np">
+			<img src="b01.png" style="position: absolute; top: 2150px; " class="b">
+			
+		</section>
+		<section class="middle">
+			<img src="gun.png" style="position: absolute; top: 9230px; left: 15px; animation: ro 0.5s infinite alternate linear;" >
+			<img src="crack.png" style="position: absolute; top: 10500px; right: 0px; width: 1300px;" class="hvr-bounce-in">
+			
+		</section>
+
+	</div>
+</body>
+</html>
